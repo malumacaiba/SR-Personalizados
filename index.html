@@ -1,59 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SR Personalizados</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<!-- Página única do site. O conteúdo de cada página é montado pelo js/script.js dentro do <main id="app"> -->
+<html lang="pt-BR"> <!-- documento -->
+<head> <!-- cabeçalho do documento -->
+  <!-- codificação de caracteres (acentos) e ajuste para telas de celular -->
+  <meta charset="utf-8"> <!-- informação do navegador -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- informação do navegador -->
+  <!-- título da aba do navegador (o JavaScript troca conforme a página) -->
+  <title>SR Personalizados</title> <!-- título da aba com texto -->
+  <!-- fontes Fredoka (títulos) e Nunito (textos) do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- arquivo ligado -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"> <!-- arquivo ligado -->
+  <!-- arquivo com todo o visual do site -->
+  <link rel="stylesheet" href="css/style.css"> <!-- arquivo ligado (vai para css/style.css) -->
+</head> <!-- fim: cabeçalho do documento -->
+<body> <!-- corpo da página -->
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="icone-zap" viewBox="0 0 24 24">
-    <path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100-1.500-.7-2.500-1.300-3.400-2.900-.3-.4.300-.4.800-1.400.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.100-.7.300-.8.800-1 1.800-.6 2.900.6 1.600 2.100 3.300 3.800 4.200 1.900 1 3.200.9 4.200.4.600-.3 1.100-1 1.200-1.600.1-.2.1-.4 0-.5z"/>
-  </symbol>
-</svg>
+<!-- Ícone do WhatsApp (definido uma vez e reutilizado com <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"> <!-- desenho vetorial (ícone SVG) (começa escondido) -->
+  <symbol id="icone-zap" viewBox="0 0 24 24"> <!-- desenho reutilizável (id "icone-zap") -->
+    <path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100-1.500-.7-2.500-1.300-3.400-2.900-.3-.4.300-.4.800-1.400.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.100-.7.300-.8.800-1 1.800-.6 2.900.6 1.600 2.100 3.300 3.800 4.200 1.900 1 3.200.9 4.200.4.600-.3 1.100-1 1.200-1.600.1-.2.1-.4 0-.5z"/> <!-- traço do desenho -->
+  </symbol> <!-- fim: desenho reutilizável -->
+</svg> <!-- fim: desenho vetorial (ícone SVG) -->
 
-<header>
-  <div class="wrap">
-    <a class="brand" href="#/" aria-label="SR Personalizados">
-      <b><svg width="24" height="16" viewBox="0 0 24 16" fill="#F4B63A" aria-hidden="true"><path d="M2 14 0 3l6 4 6-6 6 6 6-4-2 11z"/></svg>SR</b> Personalizados
-    </a>
+<!-- TOPO: marca (clique volta para a Home) e botões de Instagram e WhatsApp -->
+<header> <!-- topo -->
+  <div class="wrap"> <!-- bloco (div) (classe "wrap") -->
+    <a class="brand" href="#/" aria-label="SR Personalizados"> <!-- link (classe "brand"; vai para #/; aria-label = rótulo para leitores de tela) -->
+      <b><svg width="24" height="16" viewBox="0 0 24 16" fill="#F4B63A" aria-hidden="true"><path d="M2 14 0 3l6 4 6-6 6 6 6-4-2 11z"/></svg>SR</b> Personalizados <!-- texto em negrito + desenho vetorial (ícone SVG) + traço do desenho (começa escondido) -->
+    </a> <!-- fim: link -->
 
-    <div class="social">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-      </a>
+    <!-- botões redondos do topo -->
+    <div class="social"> <!-- bloco (div) (classe "social") -->
+      <!-- TROCAR pelo endereço do Instagram da loja: https://www.instagram.com/NOME_DA_LOJA -->
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"> <!-- link (abre em nova aba; aria-label = rótulo para leitores de tela) -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> <!-- desenho vetorial (ícone SVG) + retângulo do ícone + círculo do ícone -->
+      </a> <!-- fim: link -->
 
-      <div class="zap">
-        <button class="zap__btn" type="button" aria-expanded="false" aria-controls="zap-pop" aria-label="Falar no WhatsApp">
-          <svg class="icone-zap"><use href="#icone-zap"></use></svg>
-        </button>
-        <div id="zap-pop" class="zap__pop" hidden>
-          <div class="zap__marca"><svg class="icone-zap"><use href="#icone-zap"></use></svg>WhatsApp</div>
-          <p>Fale com a gente e faça seu orçamento.</p>
-          <a id="zap-chamar" class="botao" href="#" target="_blank" rel="noopener">Chamar</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+      <!-- Botão do WhatsApp: abre um cartão com o botão "Chamar" -->
+      <div class="zap"> <!-- bloco (div) (classe "zap") -->
+        <button class="zap__btn" type="button" aria-expanded="false" aria-controls="zap-pop" aria-label="Falar no WhatsApp"> <!-- botão (classe "zap__btn"; aria-label = rótulo para leitores de tela; aria-expanded = aberto/fechado) -->
+          <svg class="icone-zap"><use href="#icone-zap"></use></svg> <!-- desenho vetorial (ícone SVG) + reutiliza um desenho (classe "icone-zap"; vai para #icone-zap) -->
+        </button> <!-- fim: botão -->
+        <div id="zap-pop" class="zap__pop" hidden> <!-- bloco (div) (classe "zap__pop"; id "zap-pop"; começa escondido) -->
+          <div class="zap__marca"><svg class="icone-zap"><use href="#icone-zap"></use></svg>WhatsApp</div> <!-- bloco (div) + desenho vetorial (ícone SVG) + reutiliza um desenho (classe "zap__marca"; vai para #icone-zap) -->
+          <p>Fale com a gente e faça seu orçamento.</p> <!-- parágrafo com texto -->
+          <a id="zap-chamar" class="botao" href="#" target="_blank" rel="noopener">Chamar</a> <!-- link com texto (classe "botao"; id "zap-chamar"; vai para #; abre em nova aba) -->
+        </div> <!-- fim: bloco (div) -->
+      </div> <!-- fim: bloco (div) -->
+    </div> <!-- fim: bloco (div) -->
+  </div> <!-- fim: bloco (div) -->
+</header> <!-- fim: topo -->
 
-<main id="app" tabindex="-1"></main>
+<!-- CONTEÚDO: o JavaScript coloca a página aqui dentro -->
+<main id="app" tabindex="-1"></main> <!-- área principal (id "app") -->
 
-<footer class="rodape">© 2026 SR Personalizados. Todos os direitos reservados.</footer>
+<!-- rodapé com os direitos autorais -->
+<footer class="rodape">© 2026 SR Personalizados. Todos os direitos reservados.</footer> <!-- rodapé com texto (classe "rodape") -->
 
-<nav class="bottom" aria-label="Menu principal">
-  <ul>
-    <li><a href="#/" data-page="home"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg>Home</a></li>
-    <li><a href="#/catalogo" data-page="catalogo"><svg width="24" height="24" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>Catálogo</a></li>
-    <li><a href="#/sobre" data-page="sobre"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 21s-8-5.3-8-11a4.500 4.500 0 0 1 8-2.800A4.500 4.500 0 0 1 20 10c0 5.700-8 11-8 11z"/></svg>Sobre</a></li>
-    <li><a href="#/faq" data-page="faq"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.500 9.500a2.600 2.600 0 1 1 3.600 2.400c-.7.300-1.100.9-1.100 1.600M12 17h.01"/></svg>FAQ</a></li>
-  </ul>
-</nav>
+<!-- MENU FIXO DE BAIXO: os links usam "#/", e o JavaScript mostra a página ou rola até a seção. data-page liga o botão à página para destacar o ativo -->
+<nav class="bottom" aria-label="Menu principal"> <!-- menu (classe "bottom"; aria-label = rótulo para leitores de tela) -->
+  <ul> <!-- lista -->
+    <li><a href="#/" data-page="home"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg>Home</a></li> <!-- item da lista + link + desenho vetorial (ícone SVG) (vai para #/) -->
+    <li><a href="#/catalogo" data-page="catalogo"><svg width="24" height="24" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>Catálogo</a></li> <!-- item da lista + link + desenho vetorial (ícone SVG) (vai para #/catalogo) -->
+    <li><a href="#/sobre" data-page="sobre"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 21s-8-5.3-8-11a4.500 4.500 0 0 1 8-2.800A4.500 4.500 0 0 1 20 10c0 5.700-8 11-8 11z"/></svg>Sobre</a></li> <!-- item da lista + link + desenho vetorial (ícone SVG) (vai para #/sobre) -->
+    <li><a href="#/faq" data-page="faq"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.500 9.500a2.600 2.600 0 1 1 3.600 2.400c-.7.300-1.100.9-1.100 1.600M12 17h.01"/></svg>FAQ</a></li> <!-- item da lista + link + desenho vetorial (ícone SVG) (vai para #/faq) -->
+  </ul> <!-- fim: lista -->
+</nav> <!-- fim: menu -->
 
-<script src="js/script.js"></script>
-</body>
-</html>
+<!-- JavaScript do site (fica no fim para o HTML já existir quando ele rodar) -->
+<script src="js/script.js"></script> <!-- script JavaScript -->
+</body> <!-- fim: corpo da página -->
+</html> <!-- fim: documento -->
